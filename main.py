@@ -265,11 +265,13 @@ if __name__ == "__main__":
 
     if authenticate_user(user_input_username, user_input_password):
         print("Authentication successful!")
-        is_active, expiry_date = check_subscription_status()
+        # Pass the username variable here
+    is_active, expiry_date = check_subscription_status(user_input_username)
 
         if is_active:
             print(f"Your subscription is active until {expiry_date.date()}.")
             display_user_info(user_input_username, "Standard", expiry_date)  # Adjust as needed
+
 
             # Load data and send SMS
             sms_phone_numbers, smtp_phone_numbers, messages = load_data()
