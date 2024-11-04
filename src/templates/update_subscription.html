@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Subscription</title>
+</head>
+<body>
+    <h1>Update Subscription</h1>
+    <form method="POST" action="/admin/update_subscription">
+        <label for="username">Subscriber Username:</label>
+        <input type="text" name="username" required>
+        <br>
+        <label for="new_expiry">New Subscription Expiry Date (YYYY-MM-DD):</label>
+        <input type="text" name="new_expiry" required>
+        <br>
+        <input type="submit" value="Update Subscription">
+    </form>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+    <a href="/">Back to Home</a>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Status</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Subscription Status for {{ username }}</h1>
+    {% if is_active %}
+        <p>Your subscription is active until <strong>{{ expiry_date.date() }}</strong>.</p>
+        <a href="{{ url_for('send_message') }}">Send SMS</a> <!-- Added link to send SMS -->
+    {% else %}
+        <p>Your subscription has expired. Please contact us to renew.</p>
+    {% endif %}
+    <a href="/">Back to Home</a>
+</body>
+</html>

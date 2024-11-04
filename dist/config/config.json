@@ -1,0 +1,35 @@
+{
+    "API_KEY": "ZmM1MjFiYjMtZGVlOS00NTBmLTg3ZjItYmEwYmFmNjQxYjVj",
+    "APP_ID": "fe92c642-4ad2-48b7-bc33-ab28952a4800",
+    "ENABLE_ONESIGNAL": true,
+    "ONESIGNAL_DEBUG": false,
+
+    "TWILIO_ACCOUNT_SID": "YOUR_TWILIO_ACCOUNT_SID",
+    "TWILIO_AUTH_TOKEN": "YOUR_TWILIO_AUTH_TOKEN",
+    "TWILIO_PHONE_NUMBER": "YOUR_TWILIO_PHONE_NUMBER",
+    "ENABLE_TWILIO": false,
+
+    "NEXMO_API_KEY": "YOUR_NEXMO_API_KEY",
+    "NEXMO_API_SECRET": "YOUR_NEXMO_API_SECRET",
+    "NEXMO_PHONE_NUMBER": "YOUR_NEXMO_PHONE_NUMBER",
+    "ENABLE_NEXMO": false,
+
+    "SMTP_SERVER": "smtp.ionos.com",
+    "SMTP_PORT": 587,
+    "SMTP_USER": "ankitasingh@syruptech.com",
+    "SMTP_PASSWORD": "An#6S@Syp#5",
+    "ENABLE_SMTP": false,
+    "SMTP_DELAY": 1,
+    "SMTP_DEBUG": false,
+
+    "AWS_ACCESS_KEY": "AKIA5CBGTD46SMVMEQ2Y",
+    "AWS_SECRET_KEY": "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",
+    "AWS_REGION": "us-east-1",
+    "ENABLE_AWS_SNS": false,
+    "SMS_DELAY": 1,
+
+    "username": "Mrgold",
+    "password": "Johnnygill$0243",
+    "subscription_type": "life",
+    "subscription_expiry": "9999-12-31"
+}
